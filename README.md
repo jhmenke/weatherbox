@@ -36,7 +36,7 @@ Here you can see rainy weather reflected in the weatherbox, both in dark and bri
 Foggy and cloudy are basically the same thing (different lighting conditions, but the LED strips have issues). It is seldom foggy where i live, therefore cloudy weather also reflects with the fine mist created by the water atomizer.
 
 ![Foggy](https://media.giphy.com/media/3s2aAX0TISYz3XMbFs/giphy.gif)
-![Cloudy](https://media.giphy.com/media/ipZJy8dGfuMzcgUcXN/giphy.gif)
+![Cloudy](https://media.giphy.com/media/ipZJy8dGfuMzcgUcXN/giphy-downsized-large.gif)
 
 ### Clear Skies
 
