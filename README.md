@@ -18,7 +18,7 @@ The following effects are possible:
 
 The configured weather conditions are queried every 5 minutes by using the DarkSky weather service (see [DarkSky.net](https://darksky.net/dev)). The required internet connection is supplied via WiFi. Below is an image of the weatherbox in with rainy weather.
 
-![Weatherbox](img/box_1.jpg)
+![Weatherbox](/img/box_1.jpg?raw=true)
 
 ## Weather Conditions
 
@@ -67,8 +67,8 @@ Here is a list of important components i have used. I wanted to focus on the Par
 
 I used a sturdy carton box to assemble the electronics inside. Holes are cut on the side for the OLED screen, the rotary encoder and the motion sensor. The components are then glued in place. On the back, a hole for the power supply and the cables for the water atomizer and water pump is drilled. The removable top of the box houses the LED strips. Rectangles with the shape of the LED strips are cut into the top. I used three short strips wired in series. Below is a look into the inside of the box. Another image also shows the individual components with labels.
 
-![Inner side of the box](img/box_inside.jpg)
-![Electronics in the box](img/electronics_annotated.jpg)
+![Inner side of the box](/img/box_inside.jpg?raw=true)
+![Electronics in the box](/img/electronics_annotated.jpg?raw=true)
 
 ## Software
 
@@ -78,15 +78,15 @@ For me, the most interesting part of the project is the software. As stated in t
 
 Particle provides an easy way to add integrations. In the Particle console, an integration is added like this:
 
-![API integration](img/api_integration.png)
+![API integration](/img/api_integration.png?raw=true)
 
 The following settings can be used: I use a GET request to the DarkSky API. After registering, you should get an access token. This, as well as the coordinates of the location to forecast, make up a portion of the request URL.
 
-![API basic settings](img/api_edit.png)
+![API basic settings](/img/api_edit.png?raw=true)
 
 The next step is the definition of the response. The DarkSky request returns a JSON string, which we will convert into a much smaller C string. We filter our required information from the response and use a separator character for easy parsing. This string will be used in a function call in our code. You do not need to parse the JSON manually, the Particle integration will provide all keys as variables for use.
 
-![API advanced settings](img/api_advanced.png)
+![API advanced settings](/img/api_advanced.png?raw=true)
 
 After the integration is defined, the actual coding takes place. Fortunately, most Seeedstudio Grove components already come with libraries which are ready to use. Since the LED strip is WS2801 compatible, the Adafruit WS2801 library can be used to interact with the strip. In the Particle development editor, include the legacy library *WS2801*. The OLED display is controlled similarly via the legacy library *GROVE_OLED_DISPLAY_96X96*.
 
