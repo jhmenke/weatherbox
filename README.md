@@ -28,8 +28,8 @@ Here are a few gifs of different weather conditions. Please note that due to def
 
 Here you can see rainy weather reflected in the weatherbox, both in dark and bright surrounding. As soon as i turn the knob in the right gif, the forecast of tomorrow changes to today's weather including the maximum temperature.
 
-![Rainy Dark](https://media.giphy.com/media/7YDdxsqj108JE1TgUn/giphy.gif)
-![Rainy](https://media.giphy.com/media/1jaLUvTY0w3D7kUjKz/giphy.gif)
+![Rainy Dark](https://media.giphy.com/media/7YDdxsqj108JE1TgUn/giphy.gif?raw=True)
+![Rainy](https://media.giphy.com/media/1jaLUvTY0w3D7kUjKz/giphy.gif?raw=True)
 
 ### Fog/Clouds
 
@@ -78,15 +78,15 @@ For me, the most interesting part of the project is the software. As stated in t
 
 Particle provides an easy way to add integrations. In the Particle console, an integration is added like this:
 
-![API integration](/img/api_integration.png?raw=true)
+![API integration](/img/api_integration.PNG?raw=true)
 
 The following settings can be used: I use a GET request to the DarkSky API. After registering, you should get an access token. This, as well as the coordinates of the location to forecast, make up a portion of the request URL.
 
-![API basic settings](/img/api_edit.png?raw=true)
+![API basic settings](/img/api_edit.PNG?raw=true)
 
 The next step is the definition of the response. The DarkSky request returns a JSON string, which we will convert into a much smaller C string. We filter our required information from the response and use a separator character for easy parsing. This string will be used in a function call in our code. You do not need to parse the JSON manually, the Particle integration will provide all keys as variables for use.
 
-![API advanced settings](/img/api_advanced.png?raw=true)
+![API advanced settings](/img/api_advanced.PNG?raw=true)
 
 After the integration is defined, the actual coding takes place. Fortunately, most Seeedstudio Grove components already come with libraries which are ready to use. Since the LED strip is WS2801 compatible, the Adafruit WS2801 library can be used to interact with the strip. In the Particle development editor, include the legacy library *WS2801*. The OLED display is controlled similarly via the legacy library *GROVE_OLED_DISPLAY_96X96*.
 
