@@ -28,8 +28,8 @@ Here are a few gifs of different weather conditions. Please note that due to def
 
 Here you can see rainy weather reflected in the weatherbox, both in dark and bright surrounding. As soon as i turn the knob in the right gif, the forecast of tomorrow changes to today's weather including the maximum temperature.
 
-![Rainy Dark](https://media.giphy.com/media/7YDdxsqj108JE1TgUn/giphy.gif?raw=True)
-![Rainy](https://media.giphy.com/media/1jaLUvTY0w3D7kUjKz/giphy.gif?raw=True)
+![Rainy Dark](https://media.giphy.com/media/7YDdxsqj108JE1TgUn/giphy.gif)
+![Rainy](https://media.giphy.com/media/1jaLUvTY0w3D7kUjKz/giphy.gif)
 
 ### Fog/Clouds
 
